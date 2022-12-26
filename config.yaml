@@ -53,6 +53,8 @@ languages:
             url: post/4life
           - name: ✍️ 杂记
             url: post/5note
+          - name: 🎒 旅行
+            url: post/6travel
       menu:
         main:
           - identifier: search
