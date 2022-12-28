@@ -22,4 +22,9 @@ cover:
     caption: ""
     alt: ""
     relative: false
+mermaid: true
 ---
+{{<mermaid>}}
+flowchart LR
+a-->b & c-->d
+{{</mermaid>}}
