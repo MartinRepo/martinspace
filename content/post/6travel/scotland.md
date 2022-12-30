@@ -23,4 +23,6 @@ cover:
     alt: ""
     relative: false
 ---
+图片太大了，很占服务器的资源，想看的去朋友圈自取吧
 
+The images are so big that take up a lot of resources on the server, so if you'd like to see them, go to [**ins**](https://www.instagram.com/p/CmhiGcAsZZx/) and get them yourself.

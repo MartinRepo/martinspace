@@ -165,3 +165,7 @@ $ git push origin --delete <tagname>
 ```
 
 以后每次更新都可以狠狠打上标签了，很开心。
+
+参考文章👇
+
+https://git-scm.com/book/en/v2
