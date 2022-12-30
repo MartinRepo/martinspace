@@ -24,7 +24,7 @@ cover:
     relative: false
 ---
 > 这是对上学期数据库课程的总结，也可以称为复习笔记，供梳理知识，为Final作准备。
-<h2>1. Transaction 事务</h2>
+## 1. Transaction 事务
 </br>
 
 | A | C | I | D |
@@ -42,13 +42,13 @@ cover:
 <b>持久性：</b>
 
 ***
-<h2>2. Query processing 查询处理</h2>
+## 2. Query processing 查询处理
 
 ***
-<h2>3. Distributed databases 分布式数据库</h2>
+## 3. Distributed databases 分布式数据库
 
 ***
-<h2>4. Beyond relational data 关系型数据结构</h2>
+## 4. Beyond relational data 关系型数据结构
 
 ***
-<h2>5. Data-warehousing 数据挖掘</h2>
+## 5. Data-warehousing 数据挖掘
