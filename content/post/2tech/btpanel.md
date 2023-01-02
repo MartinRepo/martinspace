@@ -1,14 +1,14 @@
 ---
-title: "击穿java"
-date: 2022-12-06T22:05:10Z
-draft: false
+title: "BTPanel"
+date: 2023-01-02T00:41:14Z
+draft: true
 author: ["Martin"]
 categories: 
 - 分类1
 - 分类2
 tags: 
-- java
-description: ""
+- 服务器
+description: "踩坑无数后的选择"
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: ""
 comments: true
@@ -18,13 +18,9 @@ hidemeta: false # 是否隐藏文章的元信息，如发布日期、作者等
 disableShare: true # 底部不显示分享栏
 showbreadcrumbs: true #顶部显示当前路径
 cover:
-    image: "img/java.png"
+    image: ""
     caption: ""
     alt: ""
     relative: false
-mermaid: true
 ---
-{{<mermaid>}}
-flowchart LR
-a-->b & c-->d
-{{</mermaid>}}
+
