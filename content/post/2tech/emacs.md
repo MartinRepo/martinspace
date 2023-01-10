@@ -1,7 +1,7 @@
 ---
 title: "emacs note"
 date: 2022-12-10T00:20:10Z
-draft: false
+draft: true
 author: ["Martin"]
 categories: 
 - 分类1

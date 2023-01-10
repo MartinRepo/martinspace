@@ -1,13 +1,13 @@
 ---
 title: "COMP207"
 date: 2022-12-06T21:04:10Z
-draft: false
+draft: true
 author: ["Martin"]
 categories: 
 - 分类1
 - 分类2
 tags: 
-- MySQL
+- Database
 description: ""
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: ""

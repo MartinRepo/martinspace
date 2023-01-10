@@ -187,10 +187,10 @@ params:
 
     twikoo:
       version: 1.4.11
-    
+
     busuanzi:
       enable: true
-
+      
 taxonomies:
     category: categories
     tag: tags

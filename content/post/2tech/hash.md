@@ -50,6 +50,7 @@ implements Map<K,​V>, Cloneable, Serializable
 | boolean| containsKey(Object key)|检查指定的对象是否是这个hashtable中的一个键。           |
 | boolean| containsValue(Object value)|如果这个hashtable将一个或多个键映射到这个值，则返回true。           |
 | V | 	put​(K key, V value)|将指定的V映射到该hashtable中的指定K。|
+| V | get(Object key) | 返回指定键所映射的值，如果不存在这个映射，则返回null|
 | V | remove​(Object key)|从hashtable中删除键（和它对应的值）。|
 | boolean | 	isEmpty()| 检查这个hashtable是否有将键映射到值。|
 
