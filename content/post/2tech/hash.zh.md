@@ -1,6 +1,12 @@
 ---
 title: "详解java中的几种hash"
+keywords:
+- hashtable
+- hashmap
+- hashset
+- java
 date: 2023-01-01T15:37:32Z
+lastmod: 2023-01-10T21:02:21Z
 draft: false
 author: ["Martin"]
 categories: 
@@ -53,6 +59,9 @@ implements Map<K,​V>, Cloneable, Serializable
 | V | get(Object key) | 返回指定键所映射的值，如果不存在这个映射，则返回null|
 | V | remove​(Object key)|从hashtable中删除键（和它对应的值）。|
 | boolean | 	isEmpty()| 检查这个hashtable是否有将键映射到值。|
+| V | getOrDefault(Object key, V defaultValue) | 返回指定的键被映射到的值，如果没有键的映射的值，则返回defaultValue。|
+
+
 
 PS: V -- 映射值的类型  K -- 映射所维护的键的类型
 

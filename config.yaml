@@ -1,6 +1,6 @@
 baseURL: https://martinspace.top/
-languageCode: zh-cn # en-us
-title: Martin's Space
+# languageCode: zh-cn # en-us
+title: For martin's technique and life.
 theme: hugo-PaperMod # 主题名字，和themes文件夹下的一致
 
 enableInlineShortcodes: true
@@ -13,10 +13,11 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-#googleAnalytics: UA-123-45 # 谷歌统计
+# 谷歌统计
+googleAnalytics: G-J8TFFL1ZS7
 # Copyright: Sulv
 
-paginate: 15    # 首页每页显示的文章数
+paginate: 7    # 首页每页显示的文章数
 
 minify:
     disableXML: true
@@ -30,14 +31,15 @@ defaultContentLanguage: en # 最顶部首先展示的语言页面
 defaultContentLanguageInSubdir: true
 
 languages:
-    en:
-      languageName: "English"
+    zh:
+      languageName: "简体中文"
+      languageAltTitle: Chinese
       # contentDir: content/english
       weight: 1
       profileMode:
         enabled: true
-        title: a problem solver,
-        subtitle: "</br>👋 Hi, this is Martin's space.</br></br>👏 For technique and my life.</br></br>愿自己摆脱冷气，只是向上走。</br></br>联系方式 👇 Concact me</br>"
+        title: 人不读书，其犹夜行
+        subtitle: "</br>👋 你好，欢迎光临Martin的空间～</br></br>👏 仅以此博客系统记录技术和我的生活。</br></br>愿自己摆脱冷气，只是向上走。</br></br>联系方式 👇 </br>"
         imageUrl: "img/sun.jpg"
         imageTitle: sun
         imageWidth: 150
@@ -60,35 +62,23 @@ languages:
           - identifier: search
             name: 🔍 搜索
             url: search
-            weight: 3
+            weight: 20
           - identifier: home
             name: 🏠 主页
             url: /
             weight: 1
-          - identifier: posts
-            name: 📒 文章
-            url: post
-            weight: 2
-          # - identifier: tech
-          #   name: 👨🏻‍💻技术文章
-          #   url: posts/tech
-          #   weight: 5
-          # - identifier: life
-          #   name: 🏖记录生活
-          #   url: posts/life
-          #   weight: 6
+          # - identifier: posts
+          #   name: 📒 文章
+          #   url: post
+          #   weight: 2
           - identifier: archives
             name: 📁 归档
             url: archives/
-            weight: 20
-          # - identifier: categories
-          #   name: 🧩分类
-          #   url: categories
-          #   weight: 30
+            weight: 3
           - identifier: tags
             name: 🏷️ 标签
             url: tags
-            weight: 40
+            weight: 4
           - identifier: about
             name: 💭 关于
             url: about
@@ -97,6 +87,34 @@ languages:
           #   name: 🤝 友链
           #   url: links
           #   weight: 60
+    en:
+        languageName: "English"
+        languageAltTitle: English
+        weight: 2
+        taxonomies:
+          tag: tags
+        menu:
+            main:
+                - identifier: archives
+                  name: 📁 Archives
+                  url: archives
+                  weight: 3
+                - identifier: tags
+                  name: 🏷️ Tags
+                  url: tags
+                  weight: 4
+                - identifier: home
+                  name: 🏠 Home
+                  url: /
+                  weight: 1
+                - identifier: posts
+                  name: 📒 Posts
+                  url: post_en
+                  weight: 2
+                - identifier: about
+                  name: 💭 About
+                  url: about
+                  weight: 50
 
 outputs:
     home:
@@ -106,7 +124,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    # description: "这是一个纯粹的博客......"
+    description: "Martin的个人博客"
     author: Martin
     # author: ["Me", "You"] # multiple authors
 
@@ -137,18 +155,20 @@ params:
     socialIcons:
         - name: github
           url: "https://github.com/MartinRepo"
-        - name: twitter
-          # url:  "img/twitter.png"
-          url: "https://twitter.com/Mars30920866"
         - name: instagram
           # url: "img/instagram.png"
           url: "https://www.instagram.com/martinxing7788/"
+        - name: twitter
+          # url:  "img/twitter.png"
+          url: "https://twitter.com/Mars30920866"
         # - name: Phone
         #   url: "img/phone.png"
-        - name: linkedin
-          url: https://www.linkedin.com/in/martin-xing-b3006b254/
+        # - name: linkedin
+        #   url: https://www.linkedin.com/in/martin-xing-b3006b254/
         - name: email
-          url: "mailto:1191731324@qq.com"
+          url: "mailto:martinchi7788@gmail.com"
+        - name: RSS
+          url: "index.xml"
 
     label: # 左上角图标
       text: "Martin's space"
@@ -190,6 +210,11 @@ params:
 
     busuanzi:
       enable: true
+
+    homeInfoParams:
+      Title: "👋 Hi, this is Martin's space."
+      Content: "</br>**The international version of the system is being developed and refined, the English version is not yet complete, for more information please go to the [简体中文](https://martinspace.top/zh/) interface**</br></br>\"Don't be a programmer, to be **a problem solver**.\"</br>This sentence is from my favorite youtuber--[Joma](https://www.youtube.com/@jomaoppa), and I think I'm heading in that direction. Hopefully, this blog system will document the process.</br></br>Concact me 👇</br>"
+
       
 taxonomies:
     category: categories
