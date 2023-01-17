@@ -1,6 +1,6 @@
 baseURL: https://martinspace.top/
 # languageCode: zh-cn # en-us
-title: For martin's technique and life.
+title: Martin's space
 theme: hugo-PaperMod # 主题名字，和themes文件夹下的一致
 
 enableInlineShortcodes: true
@@ -15,7 +15,7 @@ buildExpired: false
 
 # 谷歌统计
 googleAnalytics: G-J8TFFL1ZS7
-# Copyright: Sulv
+# Copyright: Martin
 
 paginate: 7    # 首页每页显示的文章数
 

@@ -1,15 +1,9 @@
 {{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- $scratch.Add "meta" (slice (printf "Created:<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
 {{- end }}
 
-<!-- 创建时间 -->
-{{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "Created:&nbsp;<span title='%s'>%s</span>" (.Date) (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat)))) }}
-{{- end }}
-
-<!-- 更新时间 -->
 {{- if (.Param "ShowLastMod") -}}
 {{- $scratch.Add "meta" (slice (printf "Updated:&nbsp;%s" (.Lastmod.Format (.Site.Params.dateFormat | default "2006-01-02")))) }}
 {{- end }}
@@ -22,7 +16,7 @@
 {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
 {{- end }}
 
-{{- with (partial "author.html" .) }}
+{{- with (partial "author.en.html" .) }}
 {{- $scratch.Add "meta" (slice .) }}
 {{- end }}
 
