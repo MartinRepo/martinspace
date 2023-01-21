@@ -1,0 +1,4 @@
+---
+title: "🔍 Search"
+layout: search
+---

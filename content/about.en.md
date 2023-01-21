@@ -1,5 +1,5 @@
 ---
-title: "🙋🏻‍♂️ About"
+title: "📖 About me"
 layout: about
 date: 2022-12-07T12:22:28+08:00
 hidemeta: true
@@ -20,14 +20,22 @@ cover:
     relative: false
 ---
 
+- 🌊 An Underlying logic thinker & reflective practitioner
+- ✏️ Studying for BsCS @UniLiv
+- ♍︎ & ENTJ-A
+- 💭 Wish to contribute to the open source.
+- 🇨🇳 Nationality: China
 
 
-<p style="font-size: 25px;">Self Introduction</p>
+# What I'm up to 🔝
+- 🪜 I'm currently ...
+    
+    ``` Fighting with final exam```
 
-|           |                    |
-| --------- | ------------------ |
-| Chinese name:    | 不愿透露（除非你过来问我 |
-| English name:   | Martin              |
-| 职业:     | 暂时是个学生          |
-| 情感状态:  | 有🐷了，不想和没猪的人一起玩了(bushi |
-| Sports:     | Riding and Tennis         |
+- 🔆 In the near future, I'm planning to...
+    - Learn Haskell.
+    - From absolute beginner to an intermediate.
+- 🧐 To extend a bit longer, I wish myself...
+    - Contribute to Haskell.
+    - Be a contributor in Haskell.
+
