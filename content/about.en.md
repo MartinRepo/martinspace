@@ -21,8 +21,8 @@ cover:
 ---
 
 - 🌊 An Underlying logic thinker & reflective practitioner
-- ✏️ Studying for BsCS @UniLiv
-- ♍︎ & ENTJ-A
+- ✏️ Studying for BsCS [@LivUni](https://twitter.com/LivUni)
+- ♍️ & ENTJ-A
 - 💭 Wish to contribute to the open source.
 - 🇨🇳 Nationality: China
 

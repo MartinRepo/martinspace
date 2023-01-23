@@ -97,7 +97,7 @@ languages:
             main:
                 - identifier: archives
                   name: 📁 Archives
-                  url: archives
+                  url: archives_en
                   weight: 3
                 - identifier: tags
                   name: 🏷️ Tags
@@ -113,7 +113,7 @@ languages:
                   weight: 2
                 - identifier: search
                   name: 🔍 Search
-                  url: search
+                  url: search_en
                   weight: 20
                 - identifier: about
                   name: 💭 About
