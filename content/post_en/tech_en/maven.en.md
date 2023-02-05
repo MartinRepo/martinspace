@@ -7,7 +7,7 @@ author: ["Martin"]
 tags: 
 - Apache
 description: ""
-weight: 1 # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
+weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: ""
 comments: true
 showToc: true # 显示目录

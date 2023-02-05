@@ -4,7 +4,7 @@ keywords:
 - leedcode
 - 算法
 date: 2023-01-07T09:36:47Z
-lastmod: 2023-01-09T20:27:51Z
+lastmod: 2023-02-04T20:27:51Z
 draft: false
 author: ["Martin"]
 categories: 
@@ -26,6 +26,7 @@ cover:
     caption: ""
     alt: ""
     relative: false
+mermaid: true
 ---
 # 将x减到0的最小操作数([1658](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/))
 
@@ -163,5 +164,39 @@ class Solution {
 
 请返回一个能打开保险箱的最短字符串。
 
-## Hierholzer 算法
-更不过来了... 缓一下再更😷
+## 贪心构造
+这道题的方法很巧妙，值得记录一下
+
+将所有的n-1位数作为节点，每个节点都有k条边，每个节点通过一条边可以走到对应的另一个节点。
+
+
+
+# 能构造出连续值的最大数目([1798](https://leetcode.cn/problems/maximum-number-of-consecutive-values-you-can-make/))
+给一个长度为 ```n``` 的整数数组 ```coins``` ，它代表你拥有的 ```n``` 个硬币。第 ```i``` 个硬币的值为 ```coins[i]``` 。如果你从这些硬币中选出一部分硬币，它们的和为 ```x``` ，那么称，你可以 构造 出 ```x``` 。
+
+请返回从 ```0``` 开始（包括 ```0``` ），你最多能构造出多少个连续整数。(你可能有多个相同值的硬币。)
+
+## 总结
+
+这道题我最初的做法是用hashmap存储coins的值，然后遍历coins中的元素，用目标值coins中的元素，然后看该元素在hashmap中是否存在，但是我忽略了可能有相同硬币这个问题。
+
+看了答案发现这道题思路很巧，理解了半天才绕过这个弯。首先将coins数组升序排列，然后定义一个区间[l, r]，这个区间意思是有一串连续的整数，从l到r。那么现在可以设一个区间[0, x]，找到一个值y，如果y<=x+1，那么就证明[0, x+y]也是一组连续的整数。就是这里，我理解了有一会才反应过来。通俗一点讲，已知0到x这串连续整数，新来一个y，y+0一定要小于等于x+1，才可以保持连续。举个例子：现在有一串连续的整数[0, 2]，那么下一个数(即y)一定要小于等于3。因为前方序列中有0, 1, 2。0+3=3, 1+3 = 4, 2+3 = 5。
+代码如下
+```java
+class Solution {
+    public int getMaximumConsecutive(int[] coins) {
+        int res = 1;
+        //先将数组升序排列
+        Arrays.sort(coins);
+        for (int coin : coins) {
+            //判断y,若>x+1, 则推出循环，说明后面也不会有值满足条件了
+            //否则，将结果+1
+            if (coin > res) {
+                break;
+            }
+            res += i;
+        }
+        return res;
+    }
+}
+```

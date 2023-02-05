@@ -21,4 +21,5 @@ cover:
     alt: ""
     relative: false
 ---
-
+# Stack
+> A modern, cross-platform build tool for Haskell code.

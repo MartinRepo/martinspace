@@ -111,7 +111,7 @@ languages:
                   name: 📒 Posts
                   url: post_en
                   weight: 2
-                - identifier: search
+                - identifier: search·
                   name: 🔍 Search
                   url: search_en
                   weight: 20
@@ -217,7 +217,7 @@ params:
 
     homeInfoParams:
       Title: "👋 Hi, this is Martin's space."
-      Content: "</br>**The international version of the system is being developed and refined, the English version is not yet complete, for more information please go to the [简体中文](https://martinspace.top/zh/) interface**</br></br>\"Don't be a programmer, to be **a problem solver**.\"</br>This sentence is from my favorite youtuber--[Joma](https://www.youtube.com/@jomaoppa), and I think I'm heading in that direction. Hopefully, this blog system will document the process.</br></br>Concact me 👇</br>"
+      Content: "</br>**Click here to go to [简体中文](https://martinspace.top/zh/), or click 简体中文 on the top👆**</br></br>\"Don't be a programmer, to be **a problem solver**.\"</br>This sentence is from my favorite youtuber--[Joma](https://www.youtube.com/@jomaoppa), and I think I'm heading in that direction. Hopefully, this blog system will document the process.</br></br>Concact me 👇</br>"
 
       
 taxonomies:
